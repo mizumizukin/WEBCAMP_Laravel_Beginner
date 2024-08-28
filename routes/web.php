@@ -14,9 +14,9 @@ use App\Http\Controllers\WelcomeController;
 */
 
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+//タスク管理システム
+Route::get('/',[AuthController::class,'index']);
 
+// テスト用
 Route::get('/welcom',[WelcomeController::class,'index']);
 Route::get('/welcome/second', [WelcomeController::class, 'second']);
