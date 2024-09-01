@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +14,10 @@ use App\Http\Controllers\WelcomeController;
 |
 */
 
+// タスク管理システム
+Route::get('/', [AuthController::class, 'index']);
 
-//タスク管理システム
-Route::get('/',[AuthController::class,'index']);
 
-// テスト用
-Route::get('/welcom',[WelcomeController::class,'index']);
+//テスト用
+Route::get('/welcome', [WelcomeController::class, 'index']);
 Route::get('/welcome/second', [WelcomeController::class, 'second']);
