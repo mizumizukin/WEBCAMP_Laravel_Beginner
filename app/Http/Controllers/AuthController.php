@@ -1,6 +1,6 @@
 <?php
 
-declare(strivt_type=1);
+declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     /**
      * トップページ を表示する
-     * 
+     *
      * @return \Illuminate\View\View
      */
      public function index()
